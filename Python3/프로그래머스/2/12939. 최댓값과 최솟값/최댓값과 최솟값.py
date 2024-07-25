@@ -1,4 +1,4 @@
 def solution(s):
-    str = list(map(int,(s.strip().split(' '))))
-    answer = f'{min(str)} {max(str)}'
+    s = list(map(int,(s.strip().split(' '))))
+    answer = f'{min(s)} {max(s)}'
     return answer
