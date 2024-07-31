@@ -1,1 +1,1 @@
-solution = lambda x,y:x+y
+solution = lambda *x:sum(x)
