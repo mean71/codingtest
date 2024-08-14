@@ -1,1 +1,1 @@
-solution = lambda x: 'Even' if x%2 == 0 else 'Odd'
+solution = lambda x: 'Odd' if x%2 else 'Even'
