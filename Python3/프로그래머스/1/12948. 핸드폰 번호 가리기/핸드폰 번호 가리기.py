@@ -1,0 +1,1 @@
+solution = lambda n: '*'*(len(n)-4)+n[-4:]
