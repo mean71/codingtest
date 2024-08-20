@@ -1,1 +1,1 @@
-solution = lambda N: sum(map(int,list(str(N))))
+solution = lambda N: sum(map(int,str(N)))
