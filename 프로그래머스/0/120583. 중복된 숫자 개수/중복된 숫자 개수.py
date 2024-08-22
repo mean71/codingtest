@@ -1,0 +1,1 @@
+solution = lambda a,n: a.count(n)
