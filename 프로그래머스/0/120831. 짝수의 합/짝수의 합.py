@@ -1,1 +1,1 @@
-solution = lambda n: sum(i for i in range(0,n+1,2))
+solution = lambda n: sum(range(0,n+1,2))
