@@ -1,0 +1,1 @@
+solution = lambda m: [m//5500, m%5500]
