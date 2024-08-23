@@ -1,0 +1,1 @@
+solution =  lambda n: bool(n%7) + n//7
