@@ -1,1 +1,1 @@
-solution = lambda s: ''.join([i for i in s[-1::-1]])
+solution = lambda s: s[-1::-1]
