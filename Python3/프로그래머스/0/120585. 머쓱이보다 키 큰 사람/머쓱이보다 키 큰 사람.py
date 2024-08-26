@@ -1,0 +1,1 @@
+solution = lambda a,h: [i > h for i in a].count(True)
