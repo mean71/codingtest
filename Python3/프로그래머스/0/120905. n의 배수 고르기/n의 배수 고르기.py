@@ -1,0 +1,1 @@
+solution = lambda n,nl: [i for i in nl if i%n==0]
