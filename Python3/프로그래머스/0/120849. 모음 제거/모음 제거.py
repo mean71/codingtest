@@ -1,0 +1,1 @@
+solution = lambda s: s.replace('a','').replace('e','').replace('i','').replace('o','') .replace('u','')
