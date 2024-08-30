@@ -1,1 +1,1 @@
-solution = lambda n: -1 if n**0.5%1 else 2*(n**0.5) +n +1
+solution = lambda n: -1 if n**.5%1 else 2*(n**.5) +n +1
