@@ -1,0 +1,1 @@
+solution = lambda x: not bool(x%sum(map(int,list(str(x)))))
