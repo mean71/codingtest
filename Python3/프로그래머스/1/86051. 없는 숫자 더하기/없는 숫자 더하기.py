@@ -1,0 +1,1 @@
+solution = lambda n: sum(i for i in range(10) if i not in n)
