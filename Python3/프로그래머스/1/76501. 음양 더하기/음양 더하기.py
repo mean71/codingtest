@@ -1,0 +1,1 @@
+solution = lambda absolutes, signs: sum([ absolutes[i] if signs[i] else -1*absolutes[i] for i in range(len(signs)) ])
