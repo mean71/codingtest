@@ -1,0 +1,1 @@
+solution = lambda a,b: sum(i*j for i,j in zip(a,b))
