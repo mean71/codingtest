@@ -1,0 +1,1 @@
+solution = lambda p,m,c: p*sum((n+1) for n in range(c)) - m if p*sum((n+1) for n in range(c)) > m else 0
