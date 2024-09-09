@@ -1,1 +1,1 @@
-solution=lambda nl,n:nl[n-1::]
+solution=lambda nl,n:nl[n-1:]
