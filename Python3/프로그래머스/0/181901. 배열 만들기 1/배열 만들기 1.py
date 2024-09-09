@@ -1,0 +1,1 @@
+solution=lambda n,k:list(range(k,n+1,k))
