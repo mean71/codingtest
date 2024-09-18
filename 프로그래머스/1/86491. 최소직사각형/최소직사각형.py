@@ -1,0 +1,1 @@
+solution = lambda s: max(max(i) for i in s) * max(min(i) for i in s)
