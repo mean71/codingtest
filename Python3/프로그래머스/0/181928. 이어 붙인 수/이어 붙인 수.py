@@ -1,8 +1,1 @@
-def solution(num_list):
-    even, Odd = '',''
-    for i in num_list:
-        if i%2==0:
-            even += str(i)
-        else:
-            Odd += str(i)
-    return int(even)+int(Odd)
+solution=lambda l:int(''.join(str(i) for i in l if i%2)) + int(''.join(str(i) for i in l if not i%2))
