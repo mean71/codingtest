@@ -1,0 +1,1 @@
+solution=lambda l:sorted(l)[5:]
