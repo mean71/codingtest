@@ -1,1 +1,1 @@
-solution = lambda a: [max(a), *[i for i in range(len(a)) if max(a)==a[i]] ]
+solution=lambda a:[max(a),a.index(max(a))]
