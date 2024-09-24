@@ -1,0 +1,1 @@
+solution=lambda x,y:int(x[-len(y):]==y)
