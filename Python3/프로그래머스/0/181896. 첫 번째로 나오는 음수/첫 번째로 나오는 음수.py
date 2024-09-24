@@ -1,4 +1,1 @@
-def solution(nl):
-    for i,x in enumerate(nl):
-        if x<0: return i 
-    return -1
+solution=lambda l:([i for i,j in enumerate(l) if j<0] or [-1])[0]
