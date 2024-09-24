@@ -1,0 +1,1 @@
+solution=lambda a:[x for a in a for x in[a]*a]
