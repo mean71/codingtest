@@ -1,1 +1,1 @@
-solution=lambda n:str(n)
+solution=str
