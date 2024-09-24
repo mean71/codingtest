@@ -1,1 +1,1 @@
-solution=lambda s:int(s)
+solution=int
