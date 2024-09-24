@@ -1,1 +1,1 @@
-solution = lambda n,nl: [i for i in nl if i%n==0]
+solution=lambda n,l:[i for i in l if not i%n]
