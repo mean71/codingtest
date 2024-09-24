@@ -1,1 +1,1 @@
-solution=lambda l:sum(int(i) for i in l)
+solution=lambda l:sum(map(int, l))
