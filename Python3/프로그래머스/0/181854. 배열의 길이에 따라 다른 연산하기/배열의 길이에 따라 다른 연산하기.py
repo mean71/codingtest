@@ -1,0 +1,1 @@
+solution=lambda a,n:[j if i%2 else n+j for i,j in enumerate(a)]if len(a)%2 else[n+j if i%2 else j for i,j in enumerate(a)]
