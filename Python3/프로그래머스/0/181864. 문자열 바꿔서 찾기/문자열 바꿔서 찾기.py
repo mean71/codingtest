@@ -1,0 +1,1 @@
+solution=lambda s,p:int(p in''.join('A'if i!='A'else'B'for i in s))
