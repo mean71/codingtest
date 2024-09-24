@@ -1,0 +1,1 @@
+print(f'{(n:=int(input()))} is {"odd"if n%2!=0 else"even"}')
