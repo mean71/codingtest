@@ -1,0 +1,1 @@
+solution=lambda l: int(sum(l)**2 > (lambda x,y:[y := y*i for i in l][-1])(l,1))
