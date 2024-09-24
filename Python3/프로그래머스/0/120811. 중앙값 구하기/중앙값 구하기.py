@@ -1,0 +1,1 @@
+solution=lambda x:sorted(x)[len(x)//2]
