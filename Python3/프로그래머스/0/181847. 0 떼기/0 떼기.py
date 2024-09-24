@@ -1,0 +1,1 @@
+solution=lambda s:s.lstrip('0')
