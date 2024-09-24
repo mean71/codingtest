@@ -1,0 +1,1 @@
+solution=lambda s,t:int(t in s)
