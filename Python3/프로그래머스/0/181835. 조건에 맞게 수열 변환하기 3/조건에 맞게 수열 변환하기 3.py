@@ -1,1 +1,1 @@
-solution=lambda a,k:[k*i for i in a]if k%2 else[k+i for i in a]
+solution=lambda a,k:[k*i if k%2 else k+i for i in a]
