@@ -1,0 +1,1 @@
+solution=lambda s,a:s.replace(a,a.upper())
