@@ -1,0 +1,1 @@
+solution=lambda x,y:int(not len(x)+sum(x)-len(y)-sum(y))+(1 if len(x)>len(y) or (len(x)==len(y) and sum(x)>sum(y)) else -1)
