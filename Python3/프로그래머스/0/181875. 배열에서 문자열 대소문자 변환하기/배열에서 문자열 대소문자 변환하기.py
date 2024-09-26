@@ -1,0 +1,1 @@
+solution=lambda a:[s.upper() if i%2 else s.lower() for i,s in enumerate(a)]
