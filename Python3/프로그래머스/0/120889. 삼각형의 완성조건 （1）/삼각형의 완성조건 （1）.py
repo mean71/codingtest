@@ -1,0 +1,1 @@
+solution=lambda s: 2-(max(s)*2<sum(s))
