@@ -1,1 +1,1 @@
-solution = lambda ci,cd: ci[cd-1::cd]    
+solution=lambda s,n:s[n-1::n]  
