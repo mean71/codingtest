@@ -1,1 +1,1 @@
-solution=lambda d:1+(d[0]<0)if(d[1]>0)else(d[0]>0)+3
+solution=lambda d:((1,4),(2,3))[d[0]<0][d[1]<0]
