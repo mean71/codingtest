@@ -1,0 +1,1 @@
+solution=lambda n:-bool((n**.5)%1)or((n**.5)+1)**2
