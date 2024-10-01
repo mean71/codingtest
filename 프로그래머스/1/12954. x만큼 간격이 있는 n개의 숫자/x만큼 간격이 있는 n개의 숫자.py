@@ -1,0 +1,1 @@
+solution=lambda x,n:[x*i+x for i in range(n)]
