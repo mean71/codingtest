@@ -1,1 +1,1 @@
-solution=lambda a,c:[sorted(a[i[0]-1:i[1]])[i[2]-1]for i in c]
+solution=lambda a,c:[sorted(a[i-1:j])[k-1]for i,j,k in c]
