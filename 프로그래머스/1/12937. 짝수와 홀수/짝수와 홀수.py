@@ -1,0 +1,1 @@
+solution=lambda x:'Odd'if x%2 else'Even'
