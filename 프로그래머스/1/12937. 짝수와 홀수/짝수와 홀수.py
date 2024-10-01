@@ -1,1 +1,1 @@
-solution=lambda x:'Odd'if x%2 else'Even'
+solution=lambda x:('Even','Odd')[x%2]
