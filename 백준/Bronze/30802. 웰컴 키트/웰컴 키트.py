@@ -1,0 +1,5 @@
+N = int(input())
+size = map(int, input().split())
+T,P = map(int, input().split())
+print(sum(map(lambda x: x//T + bool(x%T), size)))
+print(N//P, N%P)

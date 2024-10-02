@@ -1,1 +1,1 @@
-solution = lambda p: int(p*0.8 if p >= 500000 else (p*0.9 if p >= 300000 else ( p*0.95 if p >= 100000 else p)))
+solution = lambda p: int(p*0.8 if p >= 500000 else p*0.9 if p >= 300000 else p*0.95 if p >= 100000 else p)

@@ -1,4 +1,3 @@
-
 def solution(n):
     N = n
     while True:
@@ -14,4 +13,3 @@ def solution(n):
         print(nN1)
         if nN1[0] == nN1[1]:
             return N
-print(solution(78))

@@ -1,1 +1,1 @@
-solution = lambda a, h: [i > h for i in a].count(True)
+solution=lambda a,h:sum(1 for _ in a if _ > h)

@@ -15,11 +15,10 @@ class Setting():
     def toggle(self, x):
         x=int(x)
         if x in self.S:
-            self.S.discard(x) == -1
+            self.S.discard(x)
         else:
             self.S.add(x)
     def all(self):
-        self.S.clear()
         self.S = {i for i in range(1,21)}
     def empty(self):
         self.S.clear()

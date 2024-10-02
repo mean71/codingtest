@@ -1,1 +1,0 @@
-solution=lambda a,h:sum(1 for _ in a if _ > h)

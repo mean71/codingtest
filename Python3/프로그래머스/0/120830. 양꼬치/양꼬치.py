@@ -1,1 +1,0 @@
-solution = lambda n,k: 2000*(6*n + (k-n//10))
