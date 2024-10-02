@@ -1,1 +1,1 @@
-solution=lambda n:sorted({x+j for i,j in enumerate(n)for x in n[-1:i-len(n):-1]})
+solution=lambda n:sorted({x+j for i,j in enumerate(n)for x in n[:i-len(n):-1]})
