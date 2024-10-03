@@ -1,1 +1,1 @@
-solution = lambda absolutes, signs: sum([ absolutes[i] if signs[i] else -1*absolutes[i] for i in range(len(signs)) ])
+solution=lambda n,s:sum(2*x*y-x for x,y in zip(n,s))
