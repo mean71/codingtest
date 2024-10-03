@@ -1,1 +1,1 @@
-solution=lambda f:''.join(str(i+1)for i,x in enumerate(f[1:])for _ in range(x//2))+'0'+''.join(str(len(f)-i-1)for i,x in enumerate(f[::-1])for _ in range(x//2))
+solution=lambda f:''.join((x//2)*str(i+1)for i,x in enumerate(f[1:]))+'0'+''.join((x//2)*str(len(f)-i-1)for i,x in enumerate(f[::-1]))
