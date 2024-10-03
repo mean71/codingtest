@@ -1,1 +1,1 @@
-solution=lambda s,n:sorted(s,key=lambda x:(x[n],x))
+solution=lambda s,n:sorted(s,key=lambda x:x[n]+x)
