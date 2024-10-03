@@ -1,1 +1,1 @@
-solution = lambda a,b: sum( i for i in (range(a,b+1) if a<=b else range(b,a+1)) )
+solution=lambda a,b:sum(range(min(a,b),max(a,b)+1))
