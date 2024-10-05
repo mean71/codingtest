@@ -1,1 +1,1 @@
-solution=lambda n,x,y:list(map(lambda s:' '*(n-len(s))+s,[''.join('#'if int(s)else' 'for s in bin(i|j)[2:])for i,j in zip(x,y)]))
+solution=lambda n,x,y:[''.join('#'if int(s)else' 'for s in bin(i|j)[2:].zfill(n))for i,j in zip(x,y)]
