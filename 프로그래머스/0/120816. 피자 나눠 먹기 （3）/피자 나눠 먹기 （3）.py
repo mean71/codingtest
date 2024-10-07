@@ -1,0 +1,1 @@
+solution=lambda s,n:(n//s+1)*bool(n%s)or int(n//s)
