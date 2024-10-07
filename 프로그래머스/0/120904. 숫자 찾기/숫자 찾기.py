@@ -1,1 +1,1 @@
-solution=lambda n,k:1+str(n).index(str(k))if str(k)in str(n)else-1
+solution=lambda n,k:1+str(n).find(str(k))if str(k)in str(n)else-1
