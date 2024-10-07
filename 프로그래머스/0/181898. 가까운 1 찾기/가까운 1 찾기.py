@@ -1,0 +1,1 @@
+solution=lambda l,i:l[i:].index(1)+i if l[i:].count(1)else-1
