@@ -1,0 +1,1 @@
+solution=lambda s,x,y:''.join(s[y]if i==x else s[x]if i==y else j for i,j in enumerate(s))
