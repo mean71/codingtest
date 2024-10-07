@@ -1,0 +1,1 @@
+solution=lambda n:sum(i=='3'or i=='6'or i=='9'for i in str(n))
