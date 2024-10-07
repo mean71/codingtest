@@ -1,0 +1,1 @@
+solution=lambda l:[s for s in l if 'ad'not in s]
