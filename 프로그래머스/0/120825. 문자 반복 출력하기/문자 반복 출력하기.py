@@ -1,0 +1,1 @@
+solution=lambda s,n:''.join(i*n for i in s)
