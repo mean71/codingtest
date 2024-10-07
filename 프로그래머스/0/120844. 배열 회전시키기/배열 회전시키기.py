@@ -1,1 +1,1 @@
-solution=lambda l,s: [l[-1]]+l[0:len(l)-1]if(s[0]=='r')else l[1:]+[l[0]]
+solution=lambda l,s:[l[-1]]+l[:-1]if s[0]=='r'else l[1:]+[l[0]]
