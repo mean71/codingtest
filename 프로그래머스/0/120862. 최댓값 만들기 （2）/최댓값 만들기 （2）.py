@@ -1,1 +1,1 @@
-solution=lambda l:r if(r:=max(l)*sorted(l)[-2])>(l:=min(l)*sorted(l)[1])else l
+solution=lambda l:max(max(l)*sorted(l)[-2],min(l)*sorted(l)[1])
