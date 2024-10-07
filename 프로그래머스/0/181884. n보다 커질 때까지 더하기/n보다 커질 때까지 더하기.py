@@ -1,0 +1,1 @@
+solution=lambda l,n:[sum(l[:i+1]) for i in range(len(l)) if sum(l[:i+1]) > n][0]
