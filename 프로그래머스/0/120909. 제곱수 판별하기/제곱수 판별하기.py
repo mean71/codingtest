@@ -1,1 +1,1 @@
-solution=lambda n:1+bool((n**0.5%1))
+solution=lambda n:1+bool((n**.5%1))
