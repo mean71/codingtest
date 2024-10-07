@@ -1,0 +1,1 @@
+solution=lambda a,d:[i for i in a if i not in d]
