@@ -1,0 +1,1 @@
+solution=lambda n:max(n)*sorted(n)[-2]
