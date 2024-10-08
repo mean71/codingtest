@@ -1,1 +1,1 @@
-solution=lambda a,b,c:(a+b+c)*(1+(a**2+b**2+c**2-1)*(len({a,b,c})<3))*(1+(((len({a,b,c})==1)*(3*a**3-1))))
+solution=lambda a,b,c:(a+b+c)*(1+(a**2+b**2+c**2-1)*(len({a,b,c})<3))*(1+((a==b==c)*(3*a**3-1)))
