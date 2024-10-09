@@ -1,9 +1,1 @@
-def solution(babbling):
-    baby = 'aya', 'ye', 'woo', 'ma'
-    count = 0
-    for ongR in babbling:
-        for say in baby:
-            ongR = ongR.replace(say, '0', 1)
-        if ongR.isdigit():
-            count += 1
-    return count
+solution=lambda l:sum(1 for s in l if not s.replace('aya',' ').replace('ye',' ').replace('woo',' ').replace('ma',' ').split())
