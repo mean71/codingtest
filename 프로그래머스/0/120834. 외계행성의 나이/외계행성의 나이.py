@@ -1,0 +1,1 @@
+solution=lambda a:''.join('abcdefghij'[int(i)] for i in str(a))
