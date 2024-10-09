@@ -1,1 +1,1 @@
-solution=lambda l:sum(1 for s in l if not s.replace('aya',' ').replace('ye',' ').replace('woo',' ').replace('ma',' ').split())
+solution=lambda l:sum((not s.replace('aya',' ').replace('ye',' ').replace('woo',' ').replace('ma',' ').split())for s in l)
