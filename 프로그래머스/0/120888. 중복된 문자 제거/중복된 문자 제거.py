@@ -1,0 +1,1 @@
+solution=lambda s:''.join(i for i in s if i in(s:=set(s))and not s.discard(i))
