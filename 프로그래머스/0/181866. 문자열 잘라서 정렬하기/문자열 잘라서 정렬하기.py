@@ -1,0 +1,1 @@
+solution=lambda s:sorted(i for i in s.split('x')if i)
