@@ -1,1 +1,1 @@
-solution=lambda s,m,c:''.join(s[i]for i in range(c-1,len(s),m))
+solution=lambda s,m,c:s[c-1::m]
