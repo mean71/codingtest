@@ -1,0 +1,1 @@
+solution=lambda b,k:sum(b[i][j]for i in range(min(k+1,len(b)))for j in range(min(k+1,len(b[0])))if k>=i+j)
