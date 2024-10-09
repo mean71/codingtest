@@ -1,0 +1,1 @@
+solution=lambda n:sum(any(1 for i in range(2,x//2+1)if not x%i)for x in range(4,n+1))
