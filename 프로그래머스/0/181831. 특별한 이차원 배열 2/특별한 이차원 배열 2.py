@@ -1,0 +1,1 @@
+solution=lambda a:1&all(1 if a[i][j]==a[j][i]else 0 for i,l in enumerate(a) for j in range(i+1,len(l)))
