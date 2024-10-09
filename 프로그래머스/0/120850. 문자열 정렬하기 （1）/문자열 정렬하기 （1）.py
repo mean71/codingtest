@@ -1,0 +1,1 @@
+solution=lambda s:sorted(int(i)for i in s if i.isdigit())
