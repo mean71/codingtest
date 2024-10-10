@@ -1,0 +1,1 @@
+solution=lambda s,i:''.join(y for x,y in enumerate(s)if x not in i)
