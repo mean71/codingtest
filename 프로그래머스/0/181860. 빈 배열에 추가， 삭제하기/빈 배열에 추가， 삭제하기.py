@@ -1,8 +1,1 @@
-def solution(a,f):
-    res = []
-    for x,y in enumerate(f):
-        if y:
-            res.extend([a[x]for _ in range(a[x]*2)])
-        else:
-            res = res[:len(res)-a[x]]
-    return res
+solution=lambda a,f: [(x:+=[a[x]for _ in range(a[x]*2)])if y else reversed(x:=x[-1-a[x]::-1]) for x,y in enumerate(f)]
