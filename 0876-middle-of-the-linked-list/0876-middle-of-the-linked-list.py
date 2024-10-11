@@ -11,3 +11,4 @@ class Solution:
             middle = middle.next
             end = end.next.next
         return middle
+        
