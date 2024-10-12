@@ -1,1 +1,1 @@
-solution=lambda n:2-(n==1)+len([i for i in range(2,n//2+1) if not n%i])
+solution=lambda n:2-(n==1)+sum(not n%i for i in range(2,n//2+1))
