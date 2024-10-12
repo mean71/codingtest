@@ -1,1 +1,1 @@
-solution=lambda s,p:s[:s.rfind(p)+len(p)]
+solution=lambda s,p:s[:s.rfind(p)]+p
