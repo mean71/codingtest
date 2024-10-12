@@ -1,0 +1,1 @@
+solution=lambda s,x,y:''.join(s[x+y-i] if x<=i<=y else j for i,j in enumerate(s))
