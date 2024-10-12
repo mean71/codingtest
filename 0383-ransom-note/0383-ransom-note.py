@@ -3,5 +3,4 @@ class Solution:
         for note in set(ransomNote):
             if ransomNote.count(note) > magazine.count(note):
                 return False
-                
         return True
