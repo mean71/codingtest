@@ -1,5 +1,1 @@
-def solution(dots):
-    if (dots[0][0]-dots[1][0]) / (dots[0][1]-dots[1][1]) == (dots[2][0]-dots[3][0]) / (dots[2][1]-dots[3][1]): return 1
-    elif (dots[0][0]-dots[2][0]) / (dots[0][1]-dots[2][1]) == (dots[1][0]-dots[3][0]) / (dots[1][1]-dots[3][1]): return 1
-    elif (dots[0][0]-dots[3][0]) / (dots[0][1]-dots[3][1]) == (dots[1][0]-dots[2][0]) / (dots[1][1]-dots[2][1]): return 1
-    return 0
+solution=lambda d:((d[0][0]-d[1][0])/(d[0][1]-d[1][1])==(d[2][0]-d[3][0])/(d[2][1]-d[3][1])or(d[0][0]-d[2][0])/(d[0][1]-d[2][1])==(d[1][0]-d[3][0])/(d[1][1]-d[3][1]))/1
