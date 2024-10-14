@@ -1,6 +1,1 @@
-def solution(l):
-    lst = [i for i in map(lambda x: set(range(x[0],x[1])), l)]
-    res = lst[2]&lst[1]
-    res.update(lst[1]&lst[0])
-    res.update(lst[2]&lst[0])
-    return len(res)
+solution=lambda l:(lambda l:len(l[2]&l[1]|l[2]&l[0]|l[1]&l[0]))([i for i in map(lambda x: set(range(x[0],x[1])), l)])
