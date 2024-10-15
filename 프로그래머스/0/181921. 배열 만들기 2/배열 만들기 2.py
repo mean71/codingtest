@@ -1,0 +1,1 @@
+solution=lambda l,r:[i for i in range(l,r+1)if all(not int(s)%5 for s in str(i))]or[-1]
