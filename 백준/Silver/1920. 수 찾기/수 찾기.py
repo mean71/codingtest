@@ -1,11 +1,4 @@
 import sys
-input = sys.stdin.readline
-import collections as cl
+input = sys.stdin.readline  
 
-A = cl.defaultdict(lambda:0)
-N = int(input())
-for key in map(int,input().split()):
-    A[key] = 1
-M = int(input())
-for i in map(int,input().split()):
-    print(A[i])
+([print(D.get(i,0))for i in input().split()]if(N:=input())and(D:={k:1 for k in set(input().split())})and(M:=input())else 0)
