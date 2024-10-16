@@ -1,0 +1,1 @@
+solution=lambda l,n:sorted(l,key=lambda x:(abs(n-x),n-x))
