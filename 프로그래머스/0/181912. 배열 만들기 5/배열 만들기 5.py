@@ -1,0 +1,1 @@
+solution=lambda i,k,s,l:[r for x in i if(r:=int(x[s:s+l]))>k]
