@@ -1,13 +1,10 @@
 import sys
-
+input = sys.stdin.readline
 N = int(input())
-human = {}
+human = set()
 for i in range(N):
     man,log = input().split()
-    if log=='enter':
-        human[man] = 1
-    else:
-        del human[man]
-
-for xman in sorted(human, reverse=True):
+    if log=='enter':human.add(man)
+    else:human.discard(man)
+for xman in sorted(list(human), reverse=True):
     print(xman)
