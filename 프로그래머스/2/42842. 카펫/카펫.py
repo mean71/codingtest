@@ -1,0 +1,1 @@
+solution=lambda b,y:[[b//2 + 2 - x ,x]for x in range(1, b//4 + 2)if(x-2)*(b//2-x)==y][0]
