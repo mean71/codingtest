@@ -1,0 +1,1 @@
+solution=lambda l,n:[l[i:i+n]for i in range(0,len(l),n)]
