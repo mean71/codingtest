@@ -1,0 +1,1 @@
+solution=lambda N,Y,P:[sum(N.get(n,0)for n in p)for p in P]if(N:={k:v for k,v in zip(N,Y)})else 0
