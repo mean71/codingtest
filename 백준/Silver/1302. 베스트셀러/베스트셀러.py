@@ -8,10 +8,7 @@ else:
     for _ in range(N):
         book = input().strip()
         
-        if book not in book_n:
-            book_n[book] = 1
-        else:
-            book_n[book] += 1
+        book_n[book] = book_n.get(book, 0) + 1
             
         if bestseller[0] < book_n[book]:
             bestseller = [book_n[book], book]
