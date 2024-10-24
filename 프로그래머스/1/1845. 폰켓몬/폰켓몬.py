@@ -1,0 +1,1 @@
+solution=lambda n:x if(x:=len(set(n)))<(y:=len(n)/2)else y
