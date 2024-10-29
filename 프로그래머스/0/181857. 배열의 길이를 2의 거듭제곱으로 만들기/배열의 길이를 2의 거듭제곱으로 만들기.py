@@ -1,0 +1,1 @@
+solution=lambda a:a+[0]*(next(x for i in range(11)if len(a)<=(x:=2**i))-len(a))
