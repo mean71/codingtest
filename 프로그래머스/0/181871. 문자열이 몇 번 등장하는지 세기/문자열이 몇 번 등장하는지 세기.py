@@ -1,1 +1,1 @@
-solution=lambda s,p:sum(p==s[i:i+len(p)]for i in range(1+len(s)-len(p)))
+solution=lambda s,p:sum(p==s[i:i+len(p)]for i in range(len(s)))
