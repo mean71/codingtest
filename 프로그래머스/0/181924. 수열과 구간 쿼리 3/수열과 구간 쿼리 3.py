@@ -1,7 +1,4 @@
 def solution(l,a):
     for i,j in a:
-        l.insert(i, l.pop(j))
-        l.insert(j, l.pop(i+1))
+        l[i],l[j] = l[j],l[i]
     return l
-# for i,n in enumerate(l):
-    
