@@ -1,0 +1,1 @@
+solution=lambda a:(b:=(2,1,2,3,2,4,2,5))and(c:=(3,1,2,4,5))and(x:=list(map(sum,zip(*[((j==i%5+1),(j==b[i%8]),(j==c[i//2%5]))for i,j in enumerate(a)]))))and[i+1 for i,j in enumerate(x)if j==max(x)]
