@@ -1,1 +1,1 @@
-solution=lambda p,n,a:sum(sorted(a)[-n::-n])*n
+solution=lambda _,n,a:sum(sorted(a)[-n::-n])*n
