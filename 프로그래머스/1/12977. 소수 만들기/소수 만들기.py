@@ -1,7 +1,7 @@
 def solution(nums):
     nums.sort()
     prime = set(range(2, (e:= sum(nums[-3::1]) + 1)))
-    for x in range(2, e):
+    for x in range(2, e//2):
         if x in prime:
             n = 2
             while (y:= x*n) <= e:
