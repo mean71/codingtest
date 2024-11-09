@@ -1,1 +1,1 @@
-solution=lambda n,m,l:(x:=1)and(i:=l[0])and[(i:=s)and(x:=x+1)for s in l if s>i+m-1]+[0]and x
+solution=lambda _,m,l:(x:=1)and(i:=l[0])and[(i:=s)and(x:=x+1)for s in l if s>i+m-1]+[0]and x
