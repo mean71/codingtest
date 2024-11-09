@@ -1,0 +1,1 @@
+solution=lambda s:sum(map(int,''.join(w if w.isdecimal()else" "for w in s).split()))
