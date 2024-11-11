@@ -1,0 +1,1 @@
+solution=lambda a,n:a[sorted(((j-n)**2,j,i) for i,j in enumerate(a))[0][2]]
