@@ -1,1 +1,1 @@
-solution=lambda s:''.join(sorted(c for c in s if s.count(c)==1))
+solution=lambda s:''.join(sorted(c for c in set(s) if s.count(c)==1))
