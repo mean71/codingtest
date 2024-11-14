@@ -1,0 +1,1 @@
+solution=lambda s:s.replace("a"," ").replace("b"," ").replace("c"," ").split()or["EMPTY"]
