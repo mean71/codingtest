@@ -1,0 +1,1 @@
+solution=lambda l:[-1]*(2 not in l)or l[l.index(2):len(l)-list(reversed(l)).index(2)]
