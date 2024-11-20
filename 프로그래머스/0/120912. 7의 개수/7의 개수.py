@@ -1,1 +1,1 @@
-solution=lambda l:sum(1 for s in map(str,l)for c in s if c=='7')
+solution=lambda l:str(l).count('7')
