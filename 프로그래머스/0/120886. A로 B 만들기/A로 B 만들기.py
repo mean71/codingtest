@@ -1,0 +1,1 @@
+solution=lambda b,a:all(b.count(c)==a.count(c) for c in set(a))/1
