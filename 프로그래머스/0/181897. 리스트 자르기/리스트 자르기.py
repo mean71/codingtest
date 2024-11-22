@@ -1,0 +1,1 @@
+solution=lambda n,s,l:l[s[0]*bool(n-1):1+(s[1],len(l))[not n-2]:s[2]**(not n-4)]
