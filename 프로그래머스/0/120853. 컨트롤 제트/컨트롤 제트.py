@@ -1,0 +1,1 @@
+solution=lambda s:sum(-p if n=="Z"else(p:=int(n))for n in s.split())
