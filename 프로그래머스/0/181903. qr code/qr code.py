@@ -1,1 +1,1 @@
-solution=lambda q,r,c:''.join(j*(i%q==r)for i,j in enumerate(c))
+solution=lambda q,r,c:c[r::q]
