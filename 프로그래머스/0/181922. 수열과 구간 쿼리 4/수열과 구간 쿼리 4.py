@@ -1,0 +1,1 @@
+solution=lambda a,q:[j+sum(not i%k for s,e,k in q if s<=i<=e)for i,j in enumerate(a)]
