@@ -1,8 +1,7 @@
-def solution(l):
-    max_n = max(l)
-    x = 1
-    while True:
-        mul = max_n*x
-        if not sum(mul%n for n in l): break
-        x += 1
-    return mul
+# solution=lambda L:(m:=max(L))and next(i for i in range(m,m**m+1,m)if all(i%j==0 for j in L))
+
+def solution(L):
+    m = max(L)
+    for mul in range(m, m**m+1, m):
+        if all(mul%n==0 for n in L):
+            return mul
