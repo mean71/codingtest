@@ -1,0 +1,1 @@
+solution=lambda N:bin(N).count("1")
