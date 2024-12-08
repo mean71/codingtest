@@ -1,0 +1,1 @@
+solution=lambda L:sum(4500+500*(i.count("cafelatte"))for i in L)
