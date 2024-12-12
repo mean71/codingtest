@@ -1,0 +1,1 @@
+solution=lambda x,y:bin(int(x,2)+int(y,2))[2:]
