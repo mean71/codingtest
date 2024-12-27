@@ -1,0 +1,1 @@
+solution=lambda s:[s.count(c)for c in map(chr,range(65,123))if c.isalpha()]
