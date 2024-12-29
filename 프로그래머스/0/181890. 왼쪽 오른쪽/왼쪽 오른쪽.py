@@ -1,0 +1,1 @@
+solution=lambda l:next((l[i+1:]if c!="l"else l[:i]for i,c in enumerate(l)if c in"lr"),[])
