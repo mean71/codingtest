@@ -1,3 +1,4 @@
+# 아이템 줍기 # bfs # 미해결
 from collections import deque
 from typing import List
 
@@ -34,8 +35,8 @@ def solution(rectangles: List[List[int]], cX:int, cY:int, itemX:int, itemY:int) 
     #     print("".join("- " if (j,i) not in edge else "+ " for j in range(21)))
     # (cX, cY) -> (itemX, itemY)
     # 매번 현재위치가 target인지 검사
-    # 상하좌우좌표 in edge 인지 검사
-    # 좌표가 있다면 해당 방향으로 한번 더 이동 한뒤 2번칸 횟수에 1추가후 스택에 추가
+    # 상하좌우좌표 in edge 경로가 있는지 검사
+    # 경로가 있다면 탐색한 경로를 제거한 뒤 해당 방향으로 좌표 한칸 더 옮기고 이동 횟수 1추가 -> 큐.apennd()
     queue = deque([(cX*2, cY*2, 0)])
     target = (itemX*2, itemY*2)
     dx, dy = [0,0,1,-1], [1,-1,0,0]
@@ -50,3 +51,5 @@ def solution(rectangles: List[List[int]], cX:int, cY:int, itemX:int, itemY:int) 
             if (nx, ny) in edge:
                 edge.discard((nx, ny))
                 queue.append((nx+dx[i], ny+dy[i], cnt+1))
+    
+print(solution([[1,1,7,4],[3,2,5,5],[4,3,6,9],[2,6,8,8]], 1, 3, 7, 8))
