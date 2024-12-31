@@ -1,0 +1,1 @@
+solution=lambda l,k:l[(2*k-2)%len(l)]
