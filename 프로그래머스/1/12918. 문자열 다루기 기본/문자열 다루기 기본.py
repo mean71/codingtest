@@ -1,1 +1,1 @@
-solution=lambda s:s.isdigit()and(len(s)in(4,6))
+solution=lambda s:s.isdigit()&(len(s)in(4,6))
