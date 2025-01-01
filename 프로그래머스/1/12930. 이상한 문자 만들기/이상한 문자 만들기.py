@@ -1,15 +1,1 @@
-def solution(s):
-    str=''
-    sniffling = 0
-    for i,j in enumerate(s):
-        if j.isalpha():
-            if sniffling:
-                str += s[i].lower()
-                sniffling = 0
-            else:
-                str += s[i].upper()
-                sniffling = 1
-        else:
-            str += ' '
-            sniffling = 0
-    return str
+solution=lambda s:" ".join(map(lambda s:"".join(c.lower() if i%2 else c.upper() for i,c in enumerate(s)), s.split(" ")))
