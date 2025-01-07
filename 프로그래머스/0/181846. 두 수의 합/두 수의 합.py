@@ -1,0 +1,1 @@
+solution=lambda a,b:str(sum((int(a),int(b)))) 
