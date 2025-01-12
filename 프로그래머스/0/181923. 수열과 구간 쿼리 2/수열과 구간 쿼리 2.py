@@ -1,0 +1,1 @@
+solution=lambda l,query:[min([n for n in l[q[0]:q[1]+1] if q[2] < n] or [-1]) for q in query]
