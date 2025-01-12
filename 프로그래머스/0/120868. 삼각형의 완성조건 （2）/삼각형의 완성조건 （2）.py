@@ -1,0 +1,1 @@
+solution=lambda l:2*min(l)-1
