@@ -1,0 +1,1 @@
+solution=lambda ineq,eq,n,m:int((n==m)&(eq=="=")|(n>m)&(ineq==">")|(n<m)&(ineq=="<"))
