@@ -1,0 +1,1 @@
+solution=lambda hw,h,w:sum(1 for dh,dw in zip([1,-1,0,0],[0,0,1,-1]) if -1 < h+dh < len(hw) and -1 < w+dw < len(hw) and hw[h][w]==hw[h+dh][w+dw])
