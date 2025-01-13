@@ -1,0 +1,1 @@
+solution=lambda p,k:["".join(x*k for x in r)for r in p for _ in range(k)]
