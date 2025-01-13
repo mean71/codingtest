@@ -1,2 +1,1 @@
-solution = lambda a,d: (lambda x: x if x else [-1])(sorted(e for e in a if not e%d))
-    
+solution=lambda l,d:sorted(n for n in l if not n%d)or[-1]
