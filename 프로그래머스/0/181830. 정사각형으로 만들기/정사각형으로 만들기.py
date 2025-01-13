@@ -1,0 +1,1 @@
+solution=lambda a:(k:=max(len(a), len(a[0]))) and [a[r:r+1][0] + [0]*(k-len(a[0])) if r < len(a) else [0]*k for r in range(k)]
