@@ -1,0 +1,1 @@
+solution=lambda xy:(k:=range(len(xy))) and sum(1 for i in k for j in k if xy[i][j]==0 and not any(1 for r in xy[(i-1)*(i-1 > 0):i+2] if any(r[(j-1)*(j-1 > 0):j+2])))
