@@ -1,7 +1,4 @@
 def solution(ingredient):
-    if len(ingredient) < 4:
-        return 0
-    
     stack = ingredient[0:3]
     res = 0
     
