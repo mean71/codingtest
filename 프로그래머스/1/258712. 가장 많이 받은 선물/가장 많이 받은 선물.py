@@ -10,9 +10,9 @@ def solution(friends, gifts):
     for fi in range(len(friends)-1):
         f1 = friends[fi]
         for f2 in friends[fi+1:]:
-            if record[f1][1][f2] > record[f2][1][f1]:
+            if record[f1][1][f2] > 0:
                 record[f1][2] += 1
-            elif record[f1][1][f2] < record[f2][1][f1]:
+            elif record[f1][1][f2] < 0:
                 record[f2][2] += 1
             else:
                 if record[f1][0] > record[f2][0]:
