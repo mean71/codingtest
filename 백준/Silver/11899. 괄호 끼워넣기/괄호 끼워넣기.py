@@ -1,14 +1,11 @@
 import sys
 input = sys.stdin.readline
-stack = [-1]
+res = stack = 0
 
-for c in input():
+for c in input(): 
     if c == ")":
-        if stack[-1] == "(":
-            stack.pop()
-            continue
-        stack[0] += 1
+        res += not bool(stack)
+        stack -= bool(stack)
     elif c == "(":
-        stack.append(c)
-        
-print(stack[0] + len(stack))
+        stack += 1
+print(res + stack)
