@@ -1,6 +1,6 @@
 def solution(today, terms, privacies):
     month, day = int(today[2:4])*12 + int(today[5:7]), today[-2:]
-    terms = {term:int(m) for term, m in map(lambda s:s.split(), terms)}
+    terms = {s[0]: int(s[2:]) for s in terms}
     res = []
     
     for i, s in enumerate(privacies):
