@@ -1,0 +1,1 @@
+solution=lambda n,s,e:[max(i%n, i//n)+1 for i in range(s, e+1)]
