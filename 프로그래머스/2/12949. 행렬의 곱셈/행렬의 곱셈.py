@@ -1,0 +1,1 @@
+solution=lambda x,y:[[sum(a*b for a,b in zip(xr, yc)) for yc in zip(*y)] for xr in x]
