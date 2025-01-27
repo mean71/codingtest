@@ -1,0 +1,1 @@
+solution=lambda citations:next(i for i,n in enumerate(sorted(citations+[0], reverse=True)) if i >= n )
