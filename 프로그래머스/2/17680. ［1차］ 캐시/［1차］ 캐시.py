@@ -6,7 +6,6 @@ def solution(cacheSize, cities):
     cache_que = deque(maxlen=cacheSize)
     res = 0
     
-    
     for city in cities:
         city = city.lower()
         if city in cache_set:
@@ -17,7 +16,7 @@ def solution(cacheSize, cities):
             res += 5
             cache_set.add(city)
             if len(cache_set) > cacheSize:
-                cache_set.discard(cache_que.popleft())
+                cache_set.remove(cache_que.popleft())
             cache_que.append(city)
 
     return res
