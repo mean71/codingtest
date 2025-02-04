@@ -6,9 +6,9 @@ def solution(phone_book):
     return True
 
 def solution(phone_book):
-    set_num = set(phone_book)
-    for num in set_num:
+    phone_book = set(phone_book)
+    for num in phone_book:
         for i in range(len(num)):
-            if num[:i] in set_num:
+            if num[:i] in phone_book:
                 return False
     return True
