@@ -1,4 +1,4 @@
-def int2base(n, base):
+def n2base(n, base):
     if n==0:
         return "0"
     
@@ -25,7 +25,7 @@ def solution(n:int, t:int, m:int, p:int) -> str:
     cur, idx, p = 0, 0, p-1
     
     while True:
-        for num in int2base(cur, n):
+        for num in n2base(cur, n):
             if idx%m == p:
                 res[t] = num
                 t -= 1
