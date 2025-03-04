@@ -14,17 +14,32 @@ def solution(msg):
     return
         List[int]: 압축된 사전 색인번호 배열
     '''
-    dic = dict(zip(string.ascii_uppercase, range(1, 27)))
+    dic = {k:v for v, k in enumerate(string.ascii_uppercase, 1)}
     res = []
-    l,r = 0,1
+    w = ""
     
-    while True:
-        while msg[l:r] in dic:
-            r += 1
-            if r > len(msg):
-                res.append(dic[msg[l:r-1]])
-                return res
+    for c in msg:
+        wc = w+c
+        if wc in dic:
+            w = wc
         else:
-            dic[msg[l:r]] = len(dic) + 1
-            res.append(dic[msg[l:r-1]])
-            l = r-1
+            res.append(dic[w])
+            dic[wc] = len(dic) + 1
+            w = c
+    if w:
+        res.append(dic[w])
+    
+    return res
+
+    # l,r = 0,1
+
+    # while True:
+    #     while msg[l:r] in dic:
+    #         r += 1
+    #         if r > len(msg):
+    #             res.append(dic[msg[l:r-1]])
+    #             return res
+    #     else:
+    #         dic[msg[l:r]] = len(dic) + 1
+    #         res.append(dic[msg[l:r-1]])
+    #         l = r-1
