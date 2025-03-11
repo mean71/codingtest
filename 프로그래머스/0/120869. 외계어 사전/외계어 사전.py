@@ -1,0 +1,1 @@
+solution=lambda spell, dic: 2 - (set(spell) in map(set, dic))
