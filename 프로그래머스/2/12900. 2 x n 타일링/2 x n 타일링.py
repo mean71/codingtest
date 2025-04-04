@@ -1,8 +1,7 @@
 def solution(n):
-    n길이를 전부 세로로 세우는경우 구역은 n개
-    m개의구간을 가로러 채우는 경우 n -= m
-    m의 범위는 0 <= m <= n//2
-    n에서 가로로 채운 구역의 개수 즉 n개에서 m개를 뽑는 조합
+    a, b = 1, 1
     
+    for _ in range(n):
+        a, b = a+b, a%1_000_000_007
     
-    return 
+    return b
