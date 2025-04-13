@@ -16,4 +16,4 @@ def solution(record):
         elif q[0] == "Change":
             id_name[q[1]] = q[2]
     
-    return ["".join((id_name[_id], i_o)) for _id, i_o  in res]
+    return [id_name[_id] + i_o for _id, i_o  in res]
