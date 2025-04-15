@@ -37,5 +37,4 @@ class Setting():
 S = Setting()
 
 for _ in range(int(input())):
-    cmd = input().split()
-    S(cmd)
+    S(input().split())
