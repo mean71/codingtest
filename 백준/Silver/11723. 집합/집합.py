@@ -1,51 +1,40 @@
 import sys
+input = sys.stdin.readline
+
 class Setting():
     def __init__(self):
-        self.S = set()
-        
-    def add(self, x):
-        x=int(x)
-        self.S.add(x)
-    def remove(self, x):
-        x=int(x)
-        self.S.discard(x)
-    def check(self, x):
-        x=int(x)
-        print(int(x in self.S))
-    def toggle(self, x):
-        x=int(x)
-        if x in self.S:
-            self.S.discard(x)
+        self.S = 0
+    def __call__(self, cmd):
+        if cmd[0] == "add":
+            S.add(cmd[1])
+        elif cmd[0] == "remove":
+            S.remove(cmd[1])
+        elif cmd[0] == "check":
+            S.check(cmd[1])
+        elif cmd[0] == "toggle":
+            S.toggle(cmd[1])
+        elif cmd[0] == "all":
+            S.all()
+        elif cmd[0] == "empty":
+            S.empty()
         else:
-            self.S.add(x)
-    def all(self):
-        self.S = {i for i in range(1,21)}
-    def empty(self):
-        self.S.clear()
-
-M = int(sys.stdin.readline())
-setting = Setting()
-
-for _ in range(M):
-    cmd = sys.stdin.readline().split()
+            print("올바르지 않은 주문")
     
-    if cmd[0] == "add":
-        setting.add(cmd[1])
-        # print(cmd ,setting.S)
-    elif cmd[0] == "remove":
-        setting.remove(cmd[1])
-        # print(cmd ,setting.S)
-    elif cmd[0] == "check":
-        setting.check(cmd[1])
-        # print(cmd ,setting.S)
-    elif cmd[0] == "toggle":
-        setting.toggle(cmd[1])
-        # print(cmd ,setting.S)
-    elif cmd[0] == "all":
-        setting.all()
-        # print(cmd ,setting.S)
-    elif cmd[0] == "empty":
-        setting.empty()
-        # print(cmd ,setting.S)
-    else:
-        print("올바르지 않은 주문")
+    def add(self, x):
+        self.S |= 1 << int(x)-1
+    def remove(self, x):
+        self.S &= ~(1 << int(x)-1)
+    def check(self, x):
+        print((self.S >> int(x)-1) & 1)
+    def toggle(self, x): # S.remove(x) if x in S else S.add(x)
+        self.S ^= 1 << int(x)-1
+    def all(self): # range(1,21)
+        self.S = 0b11111111111111111111
+    def empty(self): # 공집합
+        self.S = 0
+
+S = Setting()
+
+for _ in range(int(input())):
+    cmd = input().split()
+    S(cmd)
