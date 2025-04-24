@@ -1,1 +1,1 @@
-solution = lambda n, t: list(range((2*t - n*(n-1))//(2*n), (2*t - n*(n-1))//(2*n) + n))
+solution=lambda n,t: list(range(int((t/n + 0.5)) - n//2, int((t/n + 0.5)) - n//2 + n))
