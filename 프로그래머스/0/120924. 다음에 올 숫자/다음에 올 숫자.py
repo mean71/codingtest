@@ -1,5 +1,4 @@
 def solution(nums:list) -> int:
-    diff = nums[1] - nums[0]
-    if diff + nums[1] == nums[2]:
-        return nums[-1] + diff
+    if 2*nums[1] == nums[2] + nums[0]:
+        return 2*nums[-1] - nums[-2]
     return nums[-1] * (nums[1]/nums[0])
