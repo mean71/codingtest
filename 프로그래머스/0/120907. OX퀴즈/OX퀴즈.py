@@ -1,0 +1,1 @@
+solution=lambda quiz:["O" if eval(q.replace("=", "==")) else "X" for q in quiz]
