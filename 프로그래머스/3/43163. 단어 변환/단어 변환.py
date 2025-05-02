@@ -1,9 +1,10 @@
 from collections import deque
+from typing import List
 
 def _word_diff_1(word1: str, word2: str) -> bool:
     return 1 == sum(x != y for x, y in zip(word1, word2))
 
-def solution(begin, target, words):
+def solution(begin: str, target: str, words: List[str]) -> int:
     try:
         visit = deque([(words.index(target), 1)])
         visited = [True] * len(words)
