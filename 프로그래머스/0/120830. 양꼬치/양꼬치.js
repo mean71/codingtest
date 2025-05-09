@@ -1,1 +1,1 @@
-const solution = (n, k) => 2000*(n*6 + (k - Math.trunc(n/10)))
+const solution = (n, k) => 2000*(n*6 + (k - ~~(n/10)))
