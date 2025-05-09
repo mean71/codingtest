@@ -1,1 +1,1 @@
-const solution = (x,y) => Math.trunc(1000*x/y)
+const solution = (x,y) => ~~(1000*x/y)
