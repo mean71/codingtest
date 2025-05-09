@@ -1,0 +1,1 @@
+const solution = (x,y) => Math.floor(x/y)
