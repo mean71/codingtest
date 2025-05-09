@@ -1,0 +1,1 @@
+function solution(x) {return 2023-x}
