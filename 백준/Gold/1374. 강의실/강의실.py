@@ -13,10 +13,10 @@ for _ in range(int(input())):
 while start_heap:
     start, end = heapq.heappop(start_heap)
     
-    while end_heap and end_heap[0][0] <= start:
+    while end_heap and end_heap[0] <= start:
         heapq.heappop(end_heap)
     
-    heapq.heappush(end_heap, (end, start))
+    heapq.heappush(end_heap, end)
     room = max(room, len(end_heap))
 
 print(room)
