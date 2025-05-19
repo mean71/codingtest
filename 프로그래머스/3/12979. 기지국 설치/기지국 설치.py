@@ -13,7 +13,6 @@ def solution(n:int, stations:list, w:int) -> int:
     
     for i in stations:
         cnt += (i + w - idx - 1)//width
-        idx = i + w
-    diff = n - idx
+        idx = i+w
     
     return cnt
