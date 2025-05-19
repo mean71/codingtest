@@ -6,14 +6,14 @@ def solution(n:int, stations:list, w:int) -> int:
         w (int): 전파의 도달거리, 1 <= w <= 10000
     return (int): 모든 아파트에 전파를 전달하기 위한 최소 기지국 증설값
     '''
-    start = 0
+    idx = 0
     cnt = 0
-    width = 2*w + 1
+    width = 2*w+1
+    stations.append(n+w+1)
     
     for i in stations:
-        diff = i - w - start - 1
-        cnt += diff//width + bool(diff%width)
-        start = i + w
-    diff = n - start
+        cnt += (i + w - idx - 1)//width
+        idx = i + w
+    diff = n - idx
     
-    return cnt + diff//width + bool(diff%width)
+    return cnt
